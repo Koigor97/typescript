@@ -71,7 +71,7 @@ const job = {
 const country: {
   name: string;
   population: number;
-  cities: [string, string, string, string];
+  cities: string[];
 } = {
   name: "South Africa",
   population: 59_000_039,
@@ -140,3 +140,18 @@ const koiMotors: Vehicle = {
   batteryLife: 90,
   canSelfDrive: true,
 };
+
+// console.log(koiMotors);
+
+// INTERSECTION type
+type Car = ElectricVehicle & RegularVehicle;
+
+const AlphaJ: Vehicle = {
+  name: "Alpha Juls",
+  category: "Sedan",
+  tankCapacity: 38.7,
+  batteryLife: 100,
+  canSelfDrive: true,
+};
+
+// console.log(AlphaJ);

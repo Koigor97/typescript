@@ -173,4 +173,34 @@ let randomItems: [string, number, boolean];
 randomItems = ["jamie", 30, false];
 // console.log(randomItems);
 
+// VOID and NEVER type
+const sayHello = (): void => console.log(`Hello World`); // void
+const raiseAnError = (): never => {
+  throw new Error("Just feel like raising an error");
+};
+
+// sayHello();
+// raiseAnError();
+
 //ENUMS type
+enum Categories {
+  student = "student",
+  lecturer = "lecturer",
+  headOfDepartment = "head of department",
+}
+
+type LoginPortal = {
+  name: string;
+  id: number;
+  password: string;
+  category: Categories;
+};
+
+const person: LoginPortal = {
+  name: "Sarah Alpha",
+  id: 1665,
+  password: "i@mQute",
+  category: Categories.student,
+};
+
+// console.log(person);

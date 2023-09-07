@@ -25,4 +25,8 @@ The different type of types (pun intented 😃):
 | `bigint` | We are quite familiar with 'BigInt/n' from JavaScript. It is the same with TypeScript as well. BigInt allows us to work with whole numbers exceeding beyond the power raise to 53. BigInt however, cannot have decimal values or be used with 'Math' object. |
 | `string` | 'string' type are straight forward. Any value that is between a single or double quotes are string type. |
 | `object` | You 'object' type by defining within a curly braces the type of value for each property. Like `const country: {name: string; population: number} = {name: 'Sierra Leone', population: 8_000_000}`. |
-| `union` | The 'union' type, combines two types together, hence the name **_union_**. |
+| `union` | The 'union' type, combines two types together, hence the name **_union_**. The syntax: `Ostrich | Swan`|
+| `intersection` | 'intersection' type as the name imply intersect common property(ies) of two types **including** property unique to the two types. The syntax: `Ostrich & Swan`. |
+| `Array` | Array in TypeScript is declared by defining the type of values the array is going to have. If all the values are strings, then it will be `string[]` or `Array<string>`. It's the same for numbers. However, if the values are of different types, let's say strings and numbers, then it will be `(string | number)[]`. It's much more better to use assing one data-type of value per array. |
+| `tuples` | tuple by default is not available in JavaScript. Tuples in TypeScript is an array where you strongly type the type of values and the length of the array. For example -> `const familyTree = [[string, string, number, {}, ...string[]], [string, string, number, {}, ...string[]]]`. The example is a nested tuple.
+|

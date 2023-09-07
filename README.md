@@ -25,3 +25,4 @@ The different type of types (pun intented 😃):
 | `bigint` | We are quite familiar with 'BigInt/n' from JavaScript. It is the same with TypeScript as well. BigInt allows us to work with whole numbers exceeding beyond the power raise to 53. BigInt however, cannot have decimal values or be used with 'Math' object. |
 | `string` | 'string' type are straight forward. Any value that is between a single or double quotes are string type. |
 | `object` | You 'object' type by defining within a curly braces the type of value for each property. Like `const country: {name: string; population: number} = {name: 'Sierra Leone', population: 8_000_000}`. |
+| `union` | The 'union' type, combines two types together, hence the name **_union_**. |

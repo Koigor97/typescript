@@ -155,3 +155,22 @@ const AlphaJ: Vehicle = {
 };
 
 // console.log(AlphaJ);
+
+// ARRAY in typescript
+const grades: number[] = [30, 75, 88, 97, 25, 100];
+// array with different values
+const studentInfo: (string | number | {})[] = [
+  "Joseph Kaigus",
+  15,
+  { history: 75, math: 50, agriculture: 90 },
+];
+
+// console.log(grades);
+// console.log(studentInfo);
+
+// TUPLES in typescript
+let randomItems: [string, number, boolean];
+randomItems = ["jamie", 30, false];
+// console.log(randomItems);
+
+//ENUMS type

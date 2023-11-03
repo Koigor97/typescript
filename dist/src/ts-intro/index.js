@@ -142,10 +142,10 @@
       this[globalName] = mainExports;
     }
   }
-})({"5Q6T7":[function(require,module,exports) {
+})({"1J02n":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = null;
+var HMR_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "f83d4d254c3b6cae";
@@ -725,6 +725,6 @@ const person = {
     category: "student"
 }; // console.log(person);
 
-},{}]},["5Q6T7","fwCQ9"], "fwCQ9", "parcelRequire477f")
+},{}]},["1J02n","fwCQ9"], "fwCQ9", "parcelRequire477f")
 
 //# sourceMappingURL=index.js.map

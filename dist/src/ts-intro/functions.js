@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"6ohuX":[function(require,module,exports) {
+})({"394Vf":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = 1234;
+var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "0907ca6d3464ddca";
+module.bundle.HMR_BUNDLE_ID = "6253aced7b523f6b";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -574,8 +574,58 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"j4kuM":[function(require,module,exports) {
+},{}],"5MYJZ":[function(require,module,exports) {
+// Funtion expression in TypeScript
+const UserBio = function(name, age, job, gender) {
+    return `Name: ${name}\nAge: ${age}\nGender: ${gender}\nJob: ${job}`;
+};
+const info = UserBio("Samuel Turay", 25, "Software Engineer", "M");
+var DateOfBirth;
+// console.log(info);
+// _______________________________________
+// Custom Parameters and Return type
+(function(DateOfBirth) {
+    DateOfBirth["year"] = "years";
+    DateOfBirth["month"] = "months";
+    DateOfBirth["day"] = "days";
+})(DateOfBirth || (DateOfBirth = {}));
+var Education;
+(function(Education) {
+    Education["schoolOrUniversity"] = "University";
+    Education["diplomaOrDegree"] = "Degree";
+})(Education || (Education = {}));
+const person1 = {
+    name: "Samuel",
+    age: 25,
+    gender: "M",
+    dateOfBirth: "years",
+    country: "Sierra Leone",
+    sayHello: (greeting, name, education)=>{
+        return `${greeting}, I am ${name}, a student of the ${education} of BYU Idaho.`;
+    }
+};
+const convertAgeToMonths = function(person) {
+    person.age = person.age * 12;
+    person.dateOfBirth = "months";
+    return person;
+};
+const reserve = (departureDate, returnDateOrDepartingFrom, departingFromOrDestination, destination)=>{
+    if (returnDateOrDepartingFrom instanceof Date && destination) return {
+        departureDate: departureDate,
+        returnDate: returnDateOrDepartingFrom,
+        departingFrom: departingFromOrDestination,
+        destination: destination
+    };
+    else if (typeof returnDateOrDepartingFrom === "string") return {
+        departureDate: departureDate,
+        departingFrom: returnDateOrDepartingFrom,
+        destination: departingFromOrDestination
+    };
+    throw new Error("Please provide valid details to reserve a ticket");
+};
+console.log(reserve(new Date(), new Date(), "Johannesburg", "Freetown"));
+console.log(reserve(new Date(), "Johannesburg", "Freetown"));
 
-},{}]},["6ohuX","j4kuM"], "j4kuM", "parcelRequire477f")
+},{}]},["394Vf","5MYJZ"], "5MYJZ", "parcelRequire477f")
 
-//# sourceMappingURL=typescript.3464ddca.js.map
+//# sourceMappingURL=functions.js.map

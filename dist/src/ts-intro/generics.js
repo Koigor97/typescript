@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"6ohuX":[function(require,module,exports) {
+})({"cef5P":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = 1234;
+var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "0907ca6d3464ddca";
+module.bundle.HMR_BUNDLE_ID = "8217dda64017faa6";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -574,8 +574,41 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"j4kuM":[function(require,module,exports) {
+},{}],"dnogU":[function(require,module,exports) {
+// Generics in TypeScript
+const filter = (array, predicate)=>{
+    let result = [];
+    for(let i = 0; i < array.length; i++){
+        let item = array[i];
+        if (predicate(item)) result.push(item);
+    }
+    return result;
+};
+function divideEvenly(item) {
+    return item % 2 === 0;
+}
+const numbers = [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+];
+console.log(filter(numbers, divideEvenly)); // other way of writing generic types
+ // type Filter2<T> = {
+ //   (array: T[], predicate: (item: T) => boolean): T[];
+ // };
 
-},{}]},["6ohuX","j4kuM"], "j4kuM", "parcelRequire477f")
+},{}]},["cef5P","dnogU"], "dnogU", "parcelRequire477f")
 
-//# sourceMappingURL=typescript.3464ddca.js.map
+//# sourceMappingURL=generics.js.map

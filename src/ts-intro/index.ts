@@ -203,4 +203,4 @@ const person: LoginPortal = {
   category: Categories.student,
 };
 
-console.log(person);
+// console.log(person);

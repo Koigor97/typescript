@@ -146,7 +146,6 @@ const person = {
     id: 1665,
     password: "i@mQute",
     category: "student"
-};
-console.log(person);
+}; // console.log(person);
 
 //# sourceMappingURL=index.b0465d9d.js.map

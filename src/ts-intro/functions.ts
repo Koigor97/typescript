@@ -30,31 +30,31 @@ type greetFunction = (
   education: string
 ) => string;
 
-type Person = {
-  name: string;
-  age: number;
-  gender: string;
-  dateOfBirth: DateOfBirth;
-  country: string;
-  sayHello: greetFunction;
-};
+// type Person = {
+//   name: string;
+//   age: number;
+//   gender: string;
+//   dateOfBirth: DateOfBirth;
+//   country: string;
+//   sayHello: greetFunction;
+// };
 
-const person1: Person = {
-  name: "Samuel",
-  age: 25,
-  gender: "M",
-  dateOfBirth: DateOfBirth.year,
-  country: "Sierra Leone",
-  sayHello: (greeting: string, name: string, education: string) => {
-    return `${greeting}, I am ${name}, a student of the ${education} of BYU Idaho.`;
-  },
-};
+// const person1: Person = {
+//   name: "Samuel",
+//   age: 25,
+//   gender: "M",
+//   dateOfBirth: DateOfBirth.year,
+//   country: "Sierra Leone",
+//   sayHello: (greeting: string, name: string, education: string) => {
+//     return `${greeting}, I am ${name}, a student of the ${education} of BYU Idaho.`;
+//   },
+// };
 
-const convertAgeToMonths = function (person: Person): Person {
-  person.age = person.age * 12;
-  person.dateOfBirth = DateOfBirth.month;
-  return person;
-};
+// const convertAgeToMonths = function (person: Person): Person {
+//   person.age = person.age * 12;
+//   person.dateOfBirth = DateOfBirth.month;
+//   return person;
+// };
 
 // console.log(convertAgeToMonths(person1));
 // console.log(

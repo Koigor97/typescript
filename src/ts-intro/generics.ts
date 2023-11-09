@@ -20,7 +20,7 @@ function divideEvenly(item: number) {
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-console.log(filter(numbers, divideEvenly));
+// console.log(filter(numbers, divideEvenly));
 
 // other way of writing generic types
 // type Filter2<T> = {

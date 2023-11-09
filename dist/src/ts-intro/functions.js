@@ -142,10 +142,10 @@
       this[globalName] = mainExports;
     }
   }
-})({"394Vf":[function(require,module,exports) {
+})({"6I2KO":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
-var HMR_PORT = null;
+var HMR_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "6253aced7b523f6b";
@@ -594,21 +594,6 @@ var Education;
     Education["schoolOrUniversity"] = "University";
     Education["diplomaOrDegree"] = "Degree";
 })(Education || (Education = {}));
-const person1 = {
-    name: "Samuel",
-    age: 25,
-    gender: "M",
-    dateOfBirth: "years",
-    country: "Sierra Leone",
-    sayHello: (greeting, name, education)=>{
-        return `${greeting}, I am ${name}, a student of the ${education} of BYU Idaho.`;
-    }
-};
-const convertAgeToMonths = function(person) {
-    person.age = person.age * 12;
-    person.dateOfBirth = "months";
-    return person;
-};
 const reserve = (departureDate, returnDateOrDepartingFrom, departingFromOrDestination, destination)=>{
     if (returnDateOrDepartingFrom instanceof Date && destination) return {
         departureDate: departureDate,
@@ -626,6 +611,6 @@ const reserve = (departureDate, returnDateOrDepartingFrom, departingFromOrDestin
 console.log(reserve(new Date(), new Date(), "Johannesburg", "Freetown"));
 console.log(reserve(new Date(), "Johannesburg", "Freetown"));
 
-},{}]},["394Vf","5MYJZ"], "5MYJZ", "parcelRequire477f")
+},{}]},["6I2KO","5MYJZ"], "5MYJZ", "parcelRequire477f")
 
 //# sourceMappingURL=functions.js.map

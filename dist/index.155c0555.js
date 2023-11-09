@@ -21,13 +21,12 @@ person2.greet();
 class User extends Person {
     dob;
     age;
-    constructor(name, email, dob, age){
+    constructor(name, email, dob){
         super(name, email);
         this.dob = dob;
-        this.age = age;
     }
 }
-const sam = new User("Sam", "samkaliga@outlook.com", "22 Nov 1998", 22);
+const sam = new User("Sam", "samkaliga@outlook.com", "22 Nov 1998");
 console.log(sam);
 sam.greet();
 

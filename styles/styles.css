@@ -54,7 +54,7 @@ header .img-box {
 .link-container {
   border: 2px dotted currentColor;
   padding-block: 1em;
-  padding-inline: 1em;
+  padding-inline: 1.5em;
 }
 
 .link-container ul {
@@ -63,6 +63,10 @@ header .img-box {
 
 .link-container a {
   color: orange;
+}
+
+::marker {
+  content: "✓ ";
 }
 
 footer {

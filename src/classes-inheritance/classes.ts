@@ -174,4 +174,4 @@ const sneaker2: BrandAddress = {
   branchManager: "Mr Kowalski",
 };
 
-console.log(sneaker2);
+// console.log(sneaker2);

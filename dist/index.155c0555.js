@@ -108,7 +108,6 @@ const sneaker2 = {
     address: "145 Menyln Maine Mall",
     mallLocation: "Level 3 East off H&M",
     branchManager: "Mr Kowalski"
-};
-console.log(sneaker2);
+}; // console.log(sneaker2);
 
 //# sourceMappingURL=index.155c0555.js.map

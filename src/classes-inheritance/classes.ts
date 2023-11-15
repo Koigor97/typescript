@@ -156,8 +156,8 @@ const sneaker1: SneakerBrand = {
   },
 };
 
-console.log(sneaker1);
-sneaker1.sneakerDetails?.();
+// console.log(sneaker1);
+// sneaker1.sneakerDetails?.();
 
 interface BrandAddress extends SneakerBrand {
   address: string;

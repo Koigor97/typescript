@@ -99,8 +99,6 @@ const sneaker1 = {
         console.log(`Brand: ${this.brandName}\nType: ${this.sneakerType}\nYear: ${this.year}`);
     }
 };
-console.log(sneaker1);
-sneaker1.sneakerDetails?.();
 const sneaker2 = {
     brandName: "Air Jordan",
     sneakerType: "Jordan 1s",

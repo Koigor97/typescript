@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  --font-family: "Nunito", san-serif;
+  --bg-color: #0b1a0a;
+  --font-color: #f6f7d7;
+  --box-shadow-effect: 8px 8px 8px -6px rgba(0, 0, 0, 0.18);
+  --box-shadow-all-4sides: 0 0 2rem rgba(0, 0, 0, 0.18);
+  --box-shadow-all-4sides-cleaner: 0 0 2rem -5px rgba(0, 0, 0, 0.18);
+  --glass-bg-color: rgba(255, 255, 255, 0.5);
+  --glass-blur-filter: blur(15px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: 1.8rem;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* height: 50rem; */
+  gap: 2em;
+}
+
+header {
+  margin-block-start: 2rem;
+}
+
+header h1 {
+  letter-spacing: 0.5rem;
+  text-shadow: 5px 0 1rem orange;
+  text-align: center;
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+header .img-box {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.link-container {
+  border: 2px dotted currentColor;
+  padding-block: 1em;
+  padding-inline: 1.5em;
+}
+
+.link-container ul {
+  list-style: none;
+}
+
+.link-container a {
+  color: orange;
+}
+
+::marker {
+  content: "✓ ";
+}
+
+footer {
+  text-align: center;
+}

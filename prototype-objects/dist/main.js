@@ -50,7 +50,7 @@ class User {
 const bryan = new User("Bryan", "bizzy@gmail.com");
 // const hassan = new User("Hassan", "sasepo@outlook.com");
 
-console.log(bryan);
+// console.log(bryan);
 
 function Employee(name, id, department) {
   this.name = name;
@@ -69,4 +69,4 @@ Employee.prototype.greet = function () {
 
 const chad = new Employee("Chad", "#f228fhry8", "IT Department");
 
-console.log(chad);
+// console.log(chad);

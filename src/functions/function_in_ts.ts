@@ -116,12 +116,41 @@ const voidNNever: { voidFunc: () => void, neverFunc: () => never } = {
     neverFunc: neverFunction
 }
 
+/*
+* TODO 7: Ticket #F07 - Async Functions: Email Notifier:
+* You’re implementing a mock async email sender.
+* Create an async function that takes a recipient email
+* and returns a promise with "Email sent to {email}".
+*
+* Expected Output:
+*  Awaiting…
+*   ✅ Email sent to dev@pineapple.com
+*/
+async function mailNotifier(email: string): Promise<string> {
+    return Promise.resolve(`Awaiting…\n✅ Email sent to ${email}`);
+}
+
+/*
+* TODO 8: Ticket #F08 - Rest Parameters & Arguments: Batch Task Creator
+* Design a function that takes a user ID and a rest
+* parameter of task names to assign. Return a summary
+* string of tasks assigned.
+*
+* Expected Output:
+*   Assigned 3 tasks to user #dev_002: [‘Bug Fix’, ‘Deployment’, ‘Code Review’]
+ */
+
+function batchTaskCreator(userId: string, ...tasks: string[]): string {
+    return `Assigned ${tasks.length} tasks to user ${userId}: [${tasks.join(', ')}]`;
+}
+
+
 
 export {
     systemBootMessage,
     greetingHandler,
     taskEstimator,
     signatureLogger,
-    eventTriggers,
-    voidNNever
+    mailNotifier,
+    batchTaskCreator,
 }

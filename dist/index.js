@@ -1,5 +1,6 @@
 "use strict";
 const { developerAliases, interInfoTuples, acceptedMIMETypes, featureFlag } = require('./array_and_enums/array_n_enums');
+const { mailNotifier, batchTaskCreator, } = require('./functions/function_in_ts');
 const companyName = "=========== THE PINEAPPLE 🍍 COMPANY ==============";
 console.log(`${companyName}\n`);
 //================================ ARRAYS AND ENUMS IN TS ==========================//
@@ -20,4 +21,17 @@ console.log("");
 // ticket 4
 console.log("Ticket #AO4\n");
 featureFlag();
+console.log("");
+//=================================== FUNCTIONS IN TS ===============================//
+// ticket 5
+console.log("Ticket #AO5\n");
+async function logEmail(email) {
+    const result = await mailNotifier(email);
+    console.log(result);
+}
+logEmail('sam@email.com');
+// ticket 6
+console.log("Ticket #AO6\n");
+const batchTask = batchTaskCreator("#dev_007", "Feature X", "Code Review", "Deployment");
+console.log(batchTask);
 console.log("");
